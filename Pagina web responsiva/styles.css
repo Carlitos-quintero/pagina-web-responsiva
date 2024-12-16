@@ -1,0 +1,81 @@
+img{
+    height: 300px !important;
+}
+
+/* Personalización adicional */
+.hero {
+    background: linear-gradient(to right, #525257df, #9697a0db);
+    color: rgba(246, 243, 243, 0.895);
+    padding: 50px 20px;
+    text-align: center;
+}
+.testimonials {
+    background-color: #85add5;
+    padding: 40px 20px;
+}
+/* Estilo para el navbar */
+.navbar {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #c3dec4;
+}
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+    color: #d7caca !important;
+}
+
+/* Carousel */
+.carousel-inner img {
+    height: 60vh;
+    object-fit: cover;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+/* Cards en la sección de características */
+#features .card {
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    margin: 0 auto 20px auto; /* Espaciado uniforme entre tarjetas */
+}
+#features .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+#features .card-title {
+    color: #ff4a4a;
+    font-weight: bold;
+}
+#features .card-text {
+    font-size: 0.9rem;
+}
+
+/* Ajustes adicionales de espaciado para columnas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Distribuye espacio horizontal */
+    margin-left: 0;
+    margin-right: 0;
+}
+.col {
+    padding: 0 10px; /* Ajusta el espacio entre columnas */
+    margin-bottom: 20px; /* Espaciado uniforme entre filas */
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 50% !important;
+    }
+}
